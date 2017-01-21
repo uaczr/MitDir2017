@@ -38,7 +38,7 @@ class communicator():
         userdata.connected = True
         for topic in userdata.sub_topics:
             client.subscribe(topic.name)
-            logger.debug("Subscribing to topic " + topic)
+            logger.debug("Subscribing to topic " + topic.name)
 
     ## Callback on_message
     @staticmethod
